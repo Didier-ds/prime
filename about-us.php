@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primetime Home Health Services</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="revolution/css/layers.css">
-    <link rel="stylesheet" href="revolution/css/settings.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!--owl.carousel-->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <!--animation-->
-    <link rel="stylesheet" href="assets/animation/animate.css">
-    <!--logo-->
-    <link rel="icon" href="assets/image/Facvicon.png" sizes="32x32" />
-</head>
+<?php require_once('includes/header.php') ?>
 <body class="counter-scroll header_sticky">
     <!-- Preloader -->
     <!--<div id="loading-overlay">
@@ -28,7 +10,7 @@
                 <div id="header">
                     <div id="site-header">                   
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="assets/image/LogoDark.png" alt="image">
                             </a>
                         </div>
@@ -37,46 +19,46 @@
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
                                     <li>
-                                        <a href="index.html" title="">Home</a>
+                                        <a href="index.php" title="">Home</a>
                                        <!-- <ul class="sub-menu">
-                                            <li class="active"><a href="index.html" title="">Home 01</a></li>
-                                            <li><a href="home2.html" title="">Home 02</a></li>
+                                            <li class="active"><a href="index.php" title="">Home 01</a></li>
+                                            <li><a href="home2.php" title="">Home 02</a></li>
                                         </ul>
                                         /.sub-menu -->
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="about-us.html" title="">About Us</a>
+                                        <a href="about-us.php" title="">About Us</a>
                                         <ul class="sub-menu">
-                                            <li><a href="about-us.html" title="">About</a></li>
-                                            <li><a href="team.html" title="">Team</a></li>
-                                            <li><a href="team-details.html" title="">Team Details</a></li>
-                                           <!-- <li><a href="pricing-table.html" title="">Our Pricing</a></li>
-                                            <li><a href="gallery.html" title="">Gallery</a></li>
-                                            <li><a href="faq.html" title="">FAQ</a></li>-->
+                                            <li><a href="about-us.php" title="">About</a></li>
+                                            <li><a href="team.php" title="">Team</a></li>
+                                            <li><a href="team-details.php" title="">Team Details</a></li>
+                                           <!-- <li><a href="pricing-table.php" title="">Our Pricing</a></li>
+                                            <li><a href="gallery.php" title="">Gallery</a></li>
+                                            <li><a href="faq.php" title="">FAQ</a></li>-->
                                         </ul>
                                          <!-- /.sub-menu -->
                                     </li>
                                     <li>
-                                        <a href="services.html" title="">Services</a>
+                                        <a href="services.php" title="">Services</a>
                                         <!--<ul class="sub-menu">
-                                            <li><a href="services.html" title="">Services</a></li>
-                                            <li><a href="service-details.html" title="">Services Details</a></li>
+                                            <li><a href="services.php" title="">Services</a></li>
+                                            <li><a href="service-details.php" title="">Services Details</a></li>
                                         </ul>
                                          /.sub-menu -->
                                     </li>
                                     <li>
-                                        <a href="Resources.html" title="">Resources</a>
+                                        <a href="Resources.php" title="">Resources</a>
                                         <!--<ul class="sub-menu">
-                                            <li><a href="blog-standard.html" title="">Blog Standard</a></li>
-                                            <li><a href="blog-details.html" title="">Blog Details</a></li>
+                                            <li><a href="blog-standard.php" title="">Blog Standard</a></li>
+                                            <li><a href="blog-details.php" title="">Blog Details</a></li>
                                         </ul>
                                         /.sub-menu-->
                                     </li>
                                     <li>
-                                        <a href="CareersForm.html" title="">Careers</a>
+                                        <a href="CareersForm.php" title="">Careers</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="">Contact us</a>
+                                        <a href="contact.php" title="">Contact us</a>
                                     </li>
                                 </ul>
                                 <!-- /.menu -->
@@ -93,7 +75,7 @@
                                     </div>
                                 </div>
                                 <!-- <div class="button-header">
-                                    <a href="book-appointment.html" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
+                                    <a href="book-appointment.php" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
                                 </div> -->
                             </div>
                         </div>
@@ -119,7 +101,7 @@
                             interests and unique characteristics with your needs.s
                         </div> -->
                         <!-- <div class="baner-content">
-                            <a href="index.html" class="font-raguler">Home </a><span> | About Us</span> 
+                            <a href="index.php" class="font-raguler">Home </a><span> | About Us</span> 
                         </div> -->
                     </div>
                 </div>
@@ -190,16 +172,16 @@
                                                     </div>
                                                     <!-- <ul class="pdt-15">
                                                         <li>
-                                                           <a href="services.html"><i class="check-icon"></i> Malesuada dictum neque</a>
+                                                           <a href="services.php"><i class="check-icon"></i> Malesuada dictum neque</a>
                                                         </li>
                                                         <li class="mgr-none">
-                                                            <a href="services.html"> <i class="check-icon"></i>Tempor commodo</a>
+                                                            <a href="services.php"> <i class="check-icon"></i>Tempor commodo</a>
                                                         </li>
                                                         <li>
-                                                           <a href="services.html"><i class="check-icon"></i>Malesuada dictum neque</a>
+                                                           <a href="services.php"><i class="check-icon"></i>Malesuada dictum neque</a>
                                                         </li>
                                                         <li class="mgr-none">
-                                                            <a href="services.html"> <i class="check-icon"></i> Tempor commodo </a>
+                                                            <a href="services.php"> <i class="check-icon"></i> Tempor commodo </a>
                                                         </li>
                                                     </ul> -->
                                                 </div>
@@ -295,7 +277,7 @@
                                                                  The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog MTV quiz graced
                                                              </p>
                                                              <div class="flat-read-more">
-                                                                 <a href="service-details.html" class="themesflat-button font-default process">
+                                                                 <a href="service-details.php" class="themesflat-button font-default process">
                                                                      <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                  </a>
                                                              </div>
@@ -318,7 +300,7 @@
                                                                  The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog MTV quiz graced
                                                              </p>
                                                              <div class="flat-read-more">
-                                                                 <a href="service-details.html" class="themesflat-button font-default process">
+                                                                 <a href="service-details.php" class="themesflat-button font-default process">
                                                                      <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                  </a>
                                                              </div>
@@ -342,7 +324,7 @@
                                                                  The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog MTV quiz graced
                                                              </p>
                                                              <div class="flat-read-more">
-                                                                 <a href="service-details.html" class="themesflat-button font-default process">
+                                                                 <a href="service-details.php" class="themesflat-button font-default process">
                                                                      <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                  </a>
                                                              </div>
@@ -470,7 +452,7 @@
                                                                     
                                                                     <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="15" data-smobile="15"></div>
                                                                     <div class="button-header">
-                                                                        <a href="contact.html" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
+                                                                        <a href="contact.php" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
                                                                     </div>-->
                                                                     <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="40" data-smobile="40"></div>
                                                                 </div>
@@ -826,11 +808,11 @@
                                 <div class="box-list box-useful">
                                     <div class="title-footer text-color-white"><a>Useful Link</a></div>
                                     <ul class="one-half first">
-                                        <li><a href="about-us.html" title=""><span><i class="fa fa-square"></i></span>About Us</a></li>
-                                        <li><a href="team.html" title=""><span><i class="fa fa-square"></i></span>Team</a></li>
-                                        <!-- <li><a href="about-us.html" title=""><span><i class="fa fa-square"></i></span>Testomonial</a></li> -->
-                                        <li><a href="services.html" title=""><span><i class="fa fa-square"></i></span>Services</a></li>
-                                        <li><a href="Privacy.html" title=""><span><i class="fa fa-square"></i></span>Privacy Policy</a></li>
+                                        <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>About Us</a></li>
+                                        <li><a href="team.php" title=""><span><i class="fa fa-square"></i></span>Team</a></li>
+                                        <!-- <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>Testomonial</a></li> -->
+                                        <li><a href="services.php" title=""><span><i class="fa fa-square"></i></span>Services</a></li>
+                                        <li><a href="Privacy.php" title=""><span><i class="fa fa-square"></i></span>Privacy Policy</a></li>
                                     </ul><!-- /.one-half -->
                                 </div><!-- /.widget-services -->
                             
@@ -840,26 +822,26 @@
                                         <li >
                                             <ul>
                                                 <li class="in">
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details.php">
                                                         <i class="fa fa-square"></i>
                                                         Bigg Ideas Business branding Info.
                                                     </a>
                                                 </li>
                                                 <li class="day">
-                                                    <a href="blog-details.html" class="rubik-12-300" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
+                                                    <a href="blog-details.php" class="rubik-12-300" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="recent">
                                                 <ul>
                                                 <li  class="in">
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details.php">
                                                         <i class="fa fa-square"></i>
                                                         Bigg Ideas Business branding Info.
                                                     </a>
                                                 </li>
                                                 <li class="day">
-                                                    <a href="blog-details.html" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
+                                                    <a href="blog-details.php" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -869,10 +851,10 @@
                                 <div class="box-list box-services ">
                                     <div class="title-footer text-color-white"><a>Services</a></div>
                                     <ul class="one-half first">
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Brand Design</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Regular Graphics</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Devolopment Worker</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Ui/Ux Design</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Brand Design</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Regular Graphics</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Devolopment Worker</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Ui/Ux Design</a></li>
                                     </ul>
                                 </div> 
                               
@@ -928,4 +910,4 @@
     <script src="//code.tidio.co/lzdz2trdgwmqvrntfvxnnhuqmzh0dn8c.js" async></script>
 </body>
 
-</html>
+</php>

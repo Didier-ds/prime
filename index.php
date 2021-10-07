@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once('includes/header.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primetime Home Health Services</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="revolution/css/layers.css">
-    <link rel="stylesheet" href="revolution/css/settings.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!--owl.carousel-->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <!--animation-->
-    <link rel="stylesheet" href="assets/animation/animate.css">
-    <!--logo-->
-    <link rel="icon" href="assets/image/Facvicon.png" sizes="32x32" />
-</head>
 <body class="counter-scroll header_sticky">
     <!-- Preloader -->
     <!--<div id="loading-overlay">
@@ -28,7 +11,7 @@
                 <div id="header">
                     <div id="site-header">                   
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="assets/image/LogoDark.png" alt="image">
                             </a>
                         </div>
@@ -37,46 +20,46 @@
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu">
                                     <li>
-                                        <a href="index.html" title="">Home</a>
+                                        <a href="index.php" title="">Home</a>
                                        <!-- <ul class="sub-menu">
-                                            <li class="active"><a href="index.html" title="">Home 01</a></li>
-                                            <li><a href="home2.html" title="">Home 02</a></li>
+                                            <li class="active"><a href="index.php" title="">Home 01</a></li>
+                                            <li><a href="home2.php" title="">Home 02</a></li>
                                         </ul>
                                         /.sub-menu -->
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="about-us.html" title="">About Us</a>
+                                        <a href="about-us.php" title="">About Us</a>
                                         <ul class="sub-menu">
-                                            <li><a href="about-us.html" title="">About</a></li>
-                                            <li><a href="team.html" title="">Team</a></li>
-                                            <li><a href="team-details.html" title="">Team Details</a></li>
-                                           <!-- <li><a href="pricing-table.html" title="">Our Pricing</a></li>
-                                            <li><a href="gallery.html" title="">Gallery</a></li>
-                                            <li><a href="faq.html" title="">FAQ</a></li>-->
+                                            <li><a href="about-us.php" title="">About</a></li>
+                                            <li><a href="team.php" title="">Team</a></li>
+                                            <li><a href="team-details.php" title="">Team Details</a></li>
+                                           <!-- <li><a href="pricing-table.php" title="">Our Pricing</a></li>
+                                            <li><a href="gallery.php" title="">Gallery</a></li>
+                                            <li><a href="faq.php" title="">FAQ</a></li>-->
                                         </ul>
                                          <!-- /.sub-menu -->
                                     </li>
                                     <li>
-                                        <a href="services.html" title="">Services</a>
+                                        <a href="services.php" title="">Services</a>
                                         <!--<ul class="sub-menu">
-                                            <li><a href="services.html" title="">Services</a></li>
-                                            <li><a href="service-details.html" title="">Services Details</a></li>
+                                            <li><a href="services.php" title="">Services</a></li>
+                                            <li><a href="service-details.php" title="">Services Details</a></li>
                                         </ul>
                                          /.sub-menu -->
                                     </li>
                                     <li>
-                                        <a href="Resources.html" title="">Resources</a>
+                                        <a href="Resources.php" title="">Resources</a>
                                         <!--<ul class="sub-menu">
-                                            <li><a href="blog-standard.html" title="">Blog Standard</a></li>
-                                            <li><a href="blog-details.html" title="">Blog Details</a></li>
+                                            <li><a href="blog-standard.php" title="">Blog Standard</a></li>
+                                            <li><a href="blog-details.php" title="">Blog Details</a></li>
                                         </ul>
                                         /.sub-menu-->
                                     </li>
                                     <li>
-                                        <a href="CareersForm.html" title="">Careers</a>
+                                        <a href="CareersForm.php" title="">Careers</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="">Contact us</a>
+                                        <a href="contact.php" title="">Contact us</a>
                                     </li>
                                 </ul>
                                 <!-- /.menu -->
@@ -93,7 +76,7 @@
                                     </div>
                                 </div>
                                 <!-- <div class="button-header">
-                                    <a href="book-appointment.html" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
+                                    <a href="book-appointment.php" class="themesflat-button bg-accent btn-header"><span>Get Appointment</span></a>
                                 </div> -->
                             </div>
                         </div>
@@ -143,7 +126,7 @@
                                                 <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['0','10','20','-15']" data-y="['middle','middle','middle','middle']" data-voffset="['108','108','108','85']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
                                                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
                                                     data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                    <a href="about-us.html" class="themesflat-button bg-accent big"><span>Who We Are</span></a>
+                                                    <a href="about-us.php" class="themesflat-button bg-accent big"><span>Who We Are</span></a>
                                                 </div>
                                             </li>
                                             <!-- /End Slide 1 -->
@@ -175,7 +158,7 @@
                                                 <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['0','10','20','-15']" data-y="['middle','middle','middle','middle']" data-voffset="['108','108','108','85']" data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
                                                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
                                                     data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                    <a href="about-us.html" class="themesflat-button bg-accent big"><span>Who We Are</span></a>
+                                                    <a href="about-us.php" class="themesflat-button bg-accent big"><span>Who We Are</span></a>
                                                 </div>
                                             </li>
                                             <!-- /End Slide 2 -->
@@ -214,7 +197,7 @@
                                                                     <img src="./assets/image/quality.png" alt="quality">
                                                                 </div>
                                                                 <div class="themesflat-spacer clearfix" data-desktop="28" data-mobile="28" data-smobile="28"></div>
-                                                                <h3><a href="services.html">Quality and Care</a></h3>
+                                                                <h3><a href="services.php">Quality and Care</a></h3>
                                                                 <p>
                                                                     We provide high quality and cost-effective long term care in the familiar comfort of your own home.
                                                                 </p>
@@ -225,7 +208,7 @@
                                                                     <img src="./assets/image/handshake.png" alt="handshake" width="90px" height="90px">
                                                                 </div>
                                                                 <!-- <div class="themesflat-spacer clearfix" data-desktop="28" data-mobile="28" data-smobile="28"></div> -->
-                                                                <h3><a href="services.html">Highly Professional Staff</a></h3>
+                                                                <h3><a href="services.php">Highly Professional Staff</a></h3>
                                                                 <p>
                                                                     We strive to protect the integrity and dignity of our clients, assuring confidentiality and respect at all times.
                                                                 </p>
@@ -233,7 +216,7 @@
                                                         </div>
                                                         <div class="themesflat-spacer clearfix" data-desktop="45" data-mobile="45" data-smobile="20"></div>
                                                         <div class="box-button contact-us-btn">
-                                                            <a href="book-appointment.html" class="themesflat-button bg-accent btn-header"><span>Contact Us</span></a>
+                                                            <a href="book-appointment.php" class="themesflat-button bg-accent btn-header"><span>Contact Us</span></a>
                                                         </div> 
                                                         <div class="themesflat-spacer clearfix" data-desktop="78" data-mobile="70" data-smobile="50"></div>
                                                     </div>
@@ -269,13 +252,13 @@
                                                     </div>
                                                     <div class="box-wrap">
                                                         <div class="title">
-                                                            <a href="service-details.html">Personal Care Services</a>
+                                                            <a href="service-details.php">Personal Care Services</a>
                                                         </div>
                                                         <p class="pdt-10 text-color-title-sidebar">
                                                             Our care services include oral hygiene, mobility, assistance with medication, exercising and many more as instructed by each member's authorization.
                                                         </p>
                                                         <!-- <div class="flat-read-more">
-                                                            <a href="service-details.html" class="themesflat-button font-default small">
+                                                            <a href="service-details.php" class="themesflat-button font-default small">
                                                                 <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                             </a>
                                                         </div> -->
@@ -290,13 +273,13 @@
                                                     </div>
                                                     <div class="box-wrap">
                                                         <div class="title">
-                                                            <a href="service-details.html">Health Insurance Assured</a>
+                                                            <a href="service-details.php">Health Insurance Assured</a>
                                                         </div>
                                                         <p class="pdt-10 text-color-title-sidebar">
                                                             We gladly accept most insurances in and out of network. We network with insurance companies to give you affordable healthcare.
                                                         </p>
                                                         <!-- <div class="flat-read-more">
-                                                            <a href="service-details.html" class="themesflat-button font-default small">
+                                                            <a href="service-details.php" class="themesflat-button font-default small">
                                                                 <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                             </a>
                                                         </div> -->
@@ -312,13 +295,13 @@
                                                     </div>
                                                     <div class="box-wrap">
                                                         <div class="title">
-                                                            <a href="service-details.html">STAR Services</a>
+                                                            <a href="service-details.php">STAR Services</a>
                                                         </div>
                                                         <p class="pdt-10 text-color-title-sidebar">
                                                             The STAR program gives you all of the benefits Medicaid has to offer. People in STAR Medicaid get their services through medical plans which they choose.
                                                         </p>
                                                         <!-- <div class="flat-read-more">
-                                                            <a href="service-details.html" class="themesflat-button font-default small">
+                                                            <a href="service-details.php" class="themesflat-button font-default small">
                                                                 <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                             </a>
                                                         </div> -->
@@ -374,7 +357,7 @@
                                                         <!-- <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="38" data-smobile="38"></div> -->
                                                         <div class="box-wrap">
                                                             <h2 class="box-change font-rubik" >
-                                                                <a href="service-details.html">
+                                                                <a href="service-details.php">
                                                                     Personal Assistance Services
                                                                 </a>
                                                             </h2>
@@ -391,7 +374,7 @@
                                                         <!-- <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="38" data-smobile="38"></div> -->
                                                         <div class="box-wrap">
                                                             <h2 class="box-change font-rubik">
-                                                                <a href="service-details.html">
+                                                                <a href="service-details.php">
                                                                     Community Assistance Services
                                                                 </a>
                                                             </h2>
@@ -406,7 +389,7 @@
                                                         <!-- <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="38" data-smobile="38"></div> -->
                                                         <div class="box-wrap">
                                                             <h2 class="box-change font-rubik">
-                                                                <a href="service-details.html">
+                                                                <a href="service-details.php">
                                                                     Protective Supervision 
                                                                 </a>
                                                             </h2>
@@ -421,7 +404,7 @@
                                                         <!-- <div class="themesflat-spacer clearfix" data-desktop="38" data-mobile="38" data-smobile="38"></div> -->
                                                         <div class="box-wrap">
                                                             <h2  class="box-change font-rubik">
-                                                                <a href="service-details.html">
+                                                                <a href="service-details.php">
                                                                     Respite
                                                                 </a>
                                                             </h2>
@@ -455,7 +438,7 @@
                                                 <div class="item box-item-carousel wow fadeInUp" data-wow-delay="100ms">
                                                     <img src="assets/image/common/doctor01.jpg" alt="image">
                                                     <div class="info">
-                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.html">Doris Jordan</a></h2>
+                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.php">Doris Jordan</a></h2>
                                                         <p class="pdt-8">Design Expert</p>
                                                     </div>
                                                     <div class="social-doctor">
@@ -470,7 +453,7 @@
                                                 <div class="item box-item-carousel wow fadeInUp" data-wow-delay="200ms">
                                                     <img src="assets/image/common/doctor02.jpg" alt="image">
                                                     <div class="info">
-                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.html">Diana Wagner</a></h2>
+                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.php">Diana Wagner</a></h2>
                                                         <p class="pdt-8">Design Expert</p>
                                                     </div>
                                                     <div class="social-doctor">
@@ -485,7 +468,7 @@
                                                 <div class="item box-item-carousel wow fadeInUp" data-wow-delay="300ms">
                                                     <img src="assets/image/common/doctor03.jpg" alt="image">
                                                     <div class="info">
-                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.html">Harry Garrett</a></h2>
+                                                        <h2 class="name text-color-title-sidebar"><a href="doctor-details.php">Harry Garrett</a></h2>
                                                         <p class="pdt-8">Design Expert</p>
                                                     </div>
                                                     <div class="social-doctor">
@@ -528,7 +511,7 @@
                                                     <img src="assets/image/common/gallery02.jpg" alt="image">
                                                     <div class="overlay active ">
                                                         <h4 class="text-color-title-sidebar">
-                                                            <a href="services.html">
+                                                            <a href="services.php">
                                                                 Maximus libero ornare
                                                             </a>
                                                         </h4>
@@ -544,7 +527,7 @@
                                                     <img src="assets/image/common/gallery03.jpg" alt="image">
                                                     <div class="overlay">
                                                         <h4 class="text-color-title-sidebar">
-                                                            <a href="services.html">
+                                                            <a href="services.php">
                                                                 Maximus libero ornare
                                                             </a>
                                                         </h4>
@@ -559,7 +542,7 @@
                                                     <img src="assets/image/common/gallery04.jpg" alt="image">
                                                     <div class="overlay">
                                                         <h4 class="text-color-title-sidebar">
-                                                            <a href="services.html">
+                                                            <a href="services.php">
                                                                 Maximus libero ornare
                                                             </a>
                                                         </h4>
@@ -575,7 +558,7 @@
                                                     <img src="assets/image/common/gallery05.jpg" alt="image">
                                                     <div class="overlay">
                                                         <h4 class="text-color-title-sidebar">
-                                                            <a href="services.html">
+                                                            <a href="services.php">
                                                                 Maximus libero ornare
                                                             </a>
                                                         </h4>
@@ -591,7 +574,7 @@
                                                     <img src="assets/image/common/gallery06.jpg" alt="image">
                                                     <div class="overlay">
                                                         <h4 class="text-color-title-sidebar">
-                                                            <a href="services.html">
+                                                            <a href="services.php">
                                                                 Maximus libero ornare
                                                             </a>
                                                         </h4>
@@ -750,7 +733,7 @@
                                                                 Primetime Home Health Services, Inc. and our staff operate and provide services in compliance with all applicable federal, state, and local laws and regulations, disclosure and ownership information.
                                                             </p>
                                                             <!-- <div class="flat-read-more">
-                                                                <a href="service-details.html" class="themesflat-button font-default process">
+                                                                <a href="service-details.php" class="themesflat-button font-default process">
                                                                     <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                 </a>
                                                             </div> -->
@@ -778,7 +761,7 @@
 
                                                             </p>
                                                             <!-- <div class="flat-read-more">
-                                                                <a href="service-details.html" class="themesflat-button font-default process">
+                                                                <a href="service-details.php" class="themesflat-button font-default process">
                                                                     <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                 </a>
                                                             </div> -->
@@ -804,7 +787,7 @@
 
                                                             </p>
                                                             <!-- <div class="flat-read-more">
-                                                                <a href="service-details.html" class="themesflat-button font-default process">
+                                                                <a href="service-details.php" class="themesflat-button font-default process">
                                                                     <span>Read More<i class="fa fa-arrow-right"></i> </span>
                                                                 </a>
                                                             </div> -->
@@ -914,14 +897,14 @@
                                                                 <div class="content-post art">
                                                                     <ul class="meta">
                                                                         <li class="author">
-                                                                            <a href="blog-details.html">DENTAL</a>
+                                                                            <a href="blog-details.php">DENTAL</a>
                                                                         </li>
                                                                         <li class="day-post">
-                                                                            <a href="blog-details.html">APR 21, 2020</a>
+                                                                            <a href="blog-details.php">APR 21, 2020</a>
                                                                         </li>
                                                                     </ul>
                                                                     <h2 class="title text-color-title-sidebar">
-                                                                        <a href="blog-details.html">Mauris neque nisiibus non elementum</a>
+                                                                        <a href="blog-details.php">Mauris neque nisiibus non elementum</a>
                                                                     </h2>
                                                                 </div>
                                                             </div>  
@@ -936,14 +919,14 @@
                                                                 <div class="content-post  art">
                                                                     <ul class="meta">
                                                                         <li class="author">
-                                                                            <a href="blog-details.html">DENTAL</a>
+                                                                            <a href="blog-details.php">DENTAL</a>
                                                                         </li>
                                                                         <li class="day-post">
-                                                                            <a href="blog-details.html">APR 21, 2020</a>
+                                                                            <a href="blog-details.php">APR 21, 2020</a>
                                                                         </li>
                                                                     </ul>
                                                                     <h2 class="title text-color-title-sidebar">
-                                                                        <a href="blog-details.html">Donec dapibus mauris id odio ornare tempus</a>
+                                                                        <a href="blog-details.php">Donec dapibus mauris id odio ornare tempus</a>
                                                                     </h2>
                                                                 </div>
                                                             </div> 
@@ -958,14 +941,14 @@
                                                                 <div class="content-post art">
                                                                     <ul class="meta">
                                                                         <li class="author">
-                                                                            <a href="blog-details.html">DENTAL</a>
+                                                                            <a href="blog-details.php">DENTAL</a>
                                                                         </li>
                                                                         <li class="day-post">
-                                                                            <a href="blog-details.html">APR 21, 2020</a>
+                                                                            <a href="blog-details.php">APR 21, 2020</a>
                                                                         </li>
                                                                     </ul>
                                                                     <h2 class="title text-color-title-sidebar">
-                                                                        <a href="blog-details.html">Quisque suscipit ipsum est, eu venenatis leo</a>
+                                                                        <a href="blog-details.php">Quisque suscipit ipsum est, eu venenatis leo</a>
                                                                     </h2>
                                                                 </div>
                                                             </div> 
@@ -1044,11 +1027,11 @@
                                 <div class="box-list box-useful">
                                     <div class="title-footer text-color-white"><a>Useful Link</a></div>
                                     <ul class="one-half first">
-                                        <li><a href="about-us.html" title=""><span><i class="fa fa-square"></i></span>About Us</a></li>
-                                        <li><a href="team.html" title=""><span><i class="fa fa-square"></i></span>Team</a></li>
-                                        <!-- <li><a href="about-us.html" title=""><span><i class="fa fa-square"></i></span>Testomonial</a></li> -->
-                                        <li><a href="services.html" title=""><span><i class="fa fa-square"></i></span>Services</a></li>
-                                         <li><a href="Privacy.html" title=""><span><i class="fa fa-square"></i></span>Privacy Policy</a></li>
+                                        <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>About Us</a></li>
+                                        <li><a href="team.php" title=""><span><i class="fa fa-square"></i></span>Team</a></li>
+                                        <!-- <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>Testomonial</a></li> -->
+                                        <li><a href="services.php" title=""><span><i class="fa fa-square"></i></span>Services</a></li>
+                                         <li><a href="Privacy.php" title=""><span><i class="fa fa-square"></i></span>Privacy Policy</a></li>
                                     </ul><!-- /.one-half -->
                                 </div><!-- /.widget-services -->
                             
@@ -1058,26 +1041,26 @@
                                         <li >
                                             <ul>
                                                 <li class="in">
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details.php">
                                                         <i class="fa fa-square"></i>
                                                         Bigg Ideas Business branding Info.
                                                     </a>
                                                 </li>
                                                 <li class="day">
-                                                    <a href="blog-details.html" class="rubik-12-300" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
+                                                    <a href="blog-details.php" class="rubik-12-300" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="recent">
                                                 <ul>
                                                 <li  class="in">
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details.php">
                                                         <i class="fa fa-square"></i>
                                                         Bigg Ideas Business branding Info.
                                                     </a>
                                                 </li>
                                                 <li class="day">
-                                                    <a href="blog-details.html" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
+                                                    <a href="blog-details.php" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1089,10 +1072,10 @@
                                  <!--<div class="box-list box-services ">
                                     <div class="title-footer text-color-white"><a>Services</a></div>
                                     <ul class="one-half first">
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Brand Design</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Regular Graphics</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Devolopment Worker</a></li>
-                                        <li><a href="service-details.html" title=""><span><i class="fa fa-square"></i></span>Ui/Ux Design</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Brand Design</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Regular Graphics</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Devolopment Worker</a></li>
+                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Ui/Ux Design</a></li>
                                     </ul>
                                 </div> 
                                 
@@ -1168,4 +1151,4 @@
 
 </body>
 
-</html>
+</php>
