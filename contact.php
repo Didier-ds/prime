@@ -30,8 +30,8 @@
                                         <a href="about-us.php" title="">About Us</a>
                                         <ul class="sub-menu">
                                             <li><a href="about-us.php" title="">About</a></li>
-                                            <li><a href="team.php" title="">Team</a></li>
-                                            <li><a href="team-details.php" title="">Team Details</a></li>
+                                            <li><a href="doctor.php" title="">Doctor</a></li>
+                                            <!-- <li><a href="doctor-details.php" title="">Doctor Details</a></li> -->
                                            <!-- <li><a href="pricing-table.php" title="">Our Pricing</a></li>
                                             <li><a href="gallery.php" title="">Gallery</a></li>
                                             <li><a href="faq.php" title="">FAQ</a></li>-->
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </header>
-            <div id="header-baner" class="contact-bg-image">
+            <div id="header-baner">
                 <div class="container">
                     <div class="text-banner wow fadeInDown">
                         <div class="baner-tittle">
@@ -212,7 +212,26 @@
                                            <div class="col-lg-6 col-md-12 col-sm-12">
                                                <div class="box-form-contact wow fadeInDown">
                                                      <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="50" data-smobile="50"></div>
-                                                    <form class="content-form wow fadeInUp" method="post" id="contactform" action="./contact/contact-process.php" accept-charset="utf-8" novalidate="novalidate">
+                                                     <?php 
+                                                        if(isset($_POST['contact'])) {
+                                                            $name = $_POST['name'];
+                                                            $email = $_POST['email'];
+                                                            $phone = $_POST['phone'];
+                                                            $subject = $_POST['subject'];
+                                                            $message =  $_POST['message'];
+                            
+                                                            $sql = "INSERT INTO contactus ( name, email, phone, subject, message) VALUES (:name, :email, :phone, :subject, :message)";
+                                                            $stmt = $pdo-> prepare($sql);
+                                                            $stmt-> execute([
+                                                                ':name' => $name,
+                                                                ':email' => "$email",
+                                                                ':phone' => $phone,
+                                                                ':message' => $message,
+                                                                ':subject' => $subject
+                                                            ]);
+                                                        }
+                                                     ?>
+                                                    <form class="content-form wow fadeInUp" method="post" id="contactform" action="#" accept-charset="utf-8" novalidate="novalidate">
 
                                                         <div class="row">
                                                             <div class="col">
@@ -228,18 +247,18 @@
                                                                 <input type="email" name="email" class="input-contact" placeholder="Email Address" required="">
                                                             </div>
                                                             <div class="col">
-                                                                <input type="text" class="form-control" placeholder="Subject">
+                                                                <input type="text" class="form-control" name="subject" placeholder="Subject">
                                                             </div>
                                                         </div>
                                                         
                                                         <div>
-                                                            <textarea placeholder="Your Message"  maxlength="1000"></textarea>
+                                                            <textarea placeholder="Your Message" name="message"  maxlength="1000"></textarea>
                                                         </div>
         
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div class="box-submit send-contact">
-                                                                    <button type="submit" class="themesflat-button bg-accent btn-submit" role="button"><span>Send</span></button>
+                                                                    <button type="submit" name="contact" class="themesflat-button bg-accent btn-submit" role="button"><span>Send</span></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -264,157 +283,4 @@
                 <!--#content-wrap-->
             </div>
             <!--#main-content-->
-
-
-            <footer id="footer">
-                <div class="container foot-container-main">
-                    <!-- <div class="row">
-                        <div class="col-12">
-                            <div class="box-sr">
-                                <div class="text-subscribe">
-                                    <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="20"></div>
-                                    <h1 class="text-color-white">Enter Your Mail For  subscribe</h1>
-                                    <div class="themesflat-spacer clearfix" data-desktop="58" data-mobile="58" data-smobile="0"></div>
-                                </div>
-                                <div class="form-contact">
-                                    <div class="themesflat-spacer clearfix" data-desktop="74" data-mobile="74" data-smobile="0"></div>
-                                    <form action="#" method="post" accept-charset="utf-8" class="form-submit contact-form wpcf7-form">
-                                        <div class="form-group">
-                                            <input type="email" name="email" value="" class="email" placeholder="Email Address" required>
-                                            <button type="submit" class="themesflat-button bg-color-2" role="button">SUBSCRIBE</button>
-                                        </div>
-                                    </form>
-                                    <div class="themesflat-spacer clearfix" data-desktop="40" data-mobile="40" data-smobile="1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    
-                        
-                    <!-- <div class="row">
-                        <div class="themesflat-spacer clearfix" data-desktop="95" data-mobile="95" data-smobile="25"></div>
-                    </div> -->
-                    <div class="row">
-                       <div class="col-12">
-                            <div class="box-list-footer">
-                                <div class="box-list box-contact">
-                                    <div class="title-footer text-color-white">Contact Us</div>
-                                    <ul class="one-half first">
-                                        <li>
-                                            <span><i class="fas fa-map-marker-alt flat-icon-footer "></i></span>
-                                            <span>9894 Bissonnet Street, Suite 110 <br> Houston, TX 77036.</span>
-                                        </li>
-                                        <li>
-                                            <span><i class="fa fa-phone-alt flat-icon-footer"></i></span>
-                                            <span><a href="tel:713-977-7721">713-977-7721</a></span>
-                                        </li>
-                                        <li>
-                                            <span><i class="fas fa-envelope flat-icon-footer"></i></span>
-                                            <span><a href="mailto:yourmail.@gmail.com">yourmail.@gmail.com</a></span>
-                                        </li>
-                                    </ul><!-- /.one-half -->
-                                </div><!-- /.widget-services -->
-                            
-                                <div class="box-list box-useful">
-                                    <div class="title-footer text-color-white"><a>Useful Link</a></div>
-                                    <ul class="one-half first">
-                                        <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>About Us</a></li>
-                                        <li><a href="team.php" title=""><span><i class="fa fa-square"></i></span>Team</a></li>
-                                        <!-- <li><a href="about-us.php" title=""><span><i class="fa fa-square"></i></span>Testomonial</a></li> -->
-                                        <li><a href="services.php" title=""><span><i class="fa fa-square"></i></span>Services</a></li>
-                                        <li><a href="Privacy.php" title=""><span><i class="fa fa-square"></i></span>Privacy Policy</a></li>
-                                    </ul><!-- /.one-half -->
-                                </div><!-- /.widget-services -->
-                            
-                                <!--<div class="box-list box-recent">
-                                    <div class="title-footer text-color-white"><a>Recent Post</a></div>
-                                    <ul class="one-half first">
-                                        <li >
-                                            <ul>
-                                                <li class="in">
-                                                    <a href="blog-details.php">
-                                                        <i class="fa fa-square"></i>
-                                                        Bigg Ideas Business branding Info.
-                                                    </a>
-                                                </li>
-                                                <li class="day">
-                                                    <a href="blog-details.php" class="rubik-12-300" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="recent">
-                                                <ul>
-                                                <li  class="in">
-                                                    <a href="blog-details.php">
-                                                        <i class="fa fa-square"></i>
-                                                        Bigg Ideas Business branding Info.
-                                                    </a>
-                                                </li>
-                                                <li class="day">
-                                                    <a href="blog-details.php" ><span><i class="far fa-calendar-alt"></i></span>  December 7, 2021</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            
-                                <div class="box-list box-services ">
-                                    <div class="title-footer text-color-white"><a>Services</a></div>
-                                    <ul class="one-half first">
-                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Brand Design</a></li>
-                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Regular Graphics</a></li>
-                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Devolopment Worker</a></li>
-                                        <li><a href="service-details.php" title=""><span><i class="fa fa-square"></i></span>Ui/Ux Design</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                       </div>
-                    </div> -->
-                    <!-- <div class="row">
-                        <div class="themesflat-spacer clearfix" data-desktop="95" data-mobile="50" data-smobile="40"></div>
-                    </div>
-                </div> -->
-                <div class="footer-bottom">
-                    <div class="container foot-container">
-                        <div class="row footer-row">
-                            <div class="logo-bottom">
-                                <a href="">
-                                    <img src="assets/image/Logolight.png" alt="image">
-                                </a>
-                            </div>
-                            <h3 class="copyright">
-                               © Primetime Home Health Services | all rights reserved
-                            </h3>
-                            <ul class="list-icon-bottom">
-                                <li class="bottom-icon-active  "><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="bottom-icon-style "><a href="#" title=""><i class="fab fa-twitter"></i></a></li>
-                                <li class="bottom-icon-style "><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-                                <li class="bottom-icon-style " ><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--/.footer-bottom-->
-            </footer>
-
-            <div class="button-go-top">
-                <a href="#" title="" class="go-top">
-                    <i class="fa fa-chevron-up"></i>
-                </a>
-            </div>
-
-        </div><!--#page-->
-    </div> <!--#wrapper-->
-    <!-- Javascript -->
-    <script type="text/javascript" src="javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery-validate.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>
-    <!--animation-->
-    <script src="assets/animation/wow.min.js"></script>
-    <script src="javascript/animation.js"></script>
-    <script src="//code.tidio.co/lzdz2trdgwmqvrntfvxnnhuqmzh0dn8c.js" async></script>
-</body>
-
-</php>
+            <?php require_once('includes/footer.php') ?>

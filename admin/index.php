@@ -69,11 +69,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card bg-success text-white mb-4">
+                                <div class="card-body d-flex align-items-center justify-content-between">
+                                    <p>Messages</p>
+                                    <?php 
+                                        $sql = "SELECT * FROM contactus";
+                                        $stmt = $pdo->prepare($sql);
+                                        $stmt->execute();
+                                        $user_count = $stmt->rowCount();
+                                    ?>
+                                    <p><?php echo $user_count; ?></p>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" href="users.php">View Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!--Card Primary-->
 
                         <div class="card mb-4">
-                            <div class="card-header">Most Popular Posts:</div>
+                            <div class="card-header">Applicants:</div>
                             <div class="card-body">
                                 <div class="datatable table-responsive">
                                     <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
@@ -136,6 +154,54 @@
                                                             <td><?php echo $email; ?></td>
                                                             <td><?php echo $language; ?></td>
                                                             <td><?php echo $registration_number; ?></td>
+                                                            
+                                                        </tr> 
+                                                <?php }
+                                            ?>
+                                                 
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">Messages:</div>
+                            <div class="card-body">
+                                <div class="datatable table-responsive">
+                                    <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Subject</th>
+                                                <th>Messages</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php 
+                                                $sql = "SELECT * FROM contactus ";
+                                                $stmt = $pdo->prepare($sql);
+                                                $stmt->execute();
+                                                while($contactus = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                                                    // post_id, post_title, post_views, post_image, post_date, post_author, post_category_id, category_name
+                                                    $id = $contactus['id'];
+                                                    $name = $contactus['name'];
+                                                    $email = $contactus['email'];
+                                                    $subject = $contactus['subject'];
+                                                    $message = $contactus['message'];
+                                                    $phone = $contactus['phone'];
+                                                    
+                                                     ?>
+                                                        <tr>
+                                                        <td><?php echo $id; ?></td>
+                                                            <td><?php echo $name; ?></td>
+
+                                                            <td><?php echo $email; ?></td>
+                                                            <td><?php echo $phone; ?></td>
+                                                            <td><?php echo $subject; ?></td>
+                                                            <td><?php echo $message; ?></td>
                                                             
                                                         </tr> 
                                                 <?php }

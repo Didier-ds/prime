@@ -51,6 +51,8 @@
                             $even_phone = $applicant['even_phone'];
                             $email = $applicant['email'];
                             $language = $applicant['language'];
+                            $employment_desired = $applicant['employment_desired'];
+                            $hours_desired = $applicant['hours_desired'];
                             $registration_number = $applicant['registration_number'];
                             }
 
@@ -146,6 +148,8 @@
                             <p>Even Phone: <?php echo $even_phone ?></p>
                             <p>email: <?php echo $email ?></p>
                             <p>Language: <?php echo $language ?></p>
+                            <p>Employment Desired: <?php echo $employment_desired ?></p>
+                            <p>Hours Desired: <?php echo $hours_desired ?></p>
                             <p>Registration Number: <?php echo $registration_number ?></p>
                             <p>I <?php echo $investigation ?>  authorize Company to verify the information I have provided and to make any investigation of my background deemed necessary as well as authorizing third parties (e.g. former employers, law enforcement organizations, financial situations, and educational situations) to provide information about me to the Company.</p>
                             <p>I <?php echo $process ?> agree if employed by Company, to sign and comply with further agreements in order to fulfill my employment process, which may include all legaly permissible medical examinations and drug/alcohol screenings required by the company.</p>
